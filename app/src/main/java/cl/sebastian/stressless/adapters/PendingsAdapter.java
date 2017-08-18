@@ -95,6 +95,16 @@ public class PendingsAdapter extends RecyclerView.Adapter<PendingsAdapter.ViewHo
 
     }
 
+    public void updateByName(String name){
+
+    List<Pending> byName = new Queries().byName(name);
+        pendings.clear();
+        pendings.addAll(byName);
+        notifyDataSetChanged();
+
+
+    }
+
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         private CheckBox checkbox;
