@@ -1,4 +1,4 @@
-package cl.sebastian.stressless;
+package cl.sebastian.stressless.views.main;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -11,11 +11,14 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import cl.sebastian.stressless.R;
+import cl.sebastian.stressless.SearchListener;
 import cl.sebastian.stressless.models.Pending;
 
-public class MainActivity extends AppCompatActivity implements SearchListener{
+public class MainActivity extends AppCompatActivity implements SearchListener {
 
     private PendingsFragment pendingsFragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
